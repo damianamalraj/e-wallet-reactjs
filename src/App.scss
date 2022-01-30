@@ -5,13 +5,20 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    text-align: center;
     color: #222;
     /* justify-content: center; */
+
+    .active,
+    .new {
+        text-align: center;
+    }
+
     h1 {
+        text-align: center;
         font-family: "Source Sans Pro", sans-serif;
     }
 
+    h2,
     p {
         font-family: "PT Mono", monospace;
     }

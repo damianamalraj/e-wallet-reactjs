@@ -1,7 +1,7 @@
+import { useState } from "react";
 import "./App.scss";
 import Home from "./view/Home";
 import AddCard from "./view/AddCard";
-import { useState } from "react";
 
 let array = [
     {
@@ -9,21 +9,21 @@ let array = [
         cardholder: "Daniel Amalraj",
         expireMonth: "2022/21",
         CCV: "987",
-        vendor: "Bitcoin Inc",
+        vendor: "bitcoin",
     },
     {
         cardNumber: "8657567645654565",
         cardholder: "Matthew Amalraj",
         expireMonth: "2022/21",
         CCV: "987",
-        vendor: "Blockchain Inc",
+        vendor: "blockchain",
     },
     {
         cardNumber: "8767864645654565",
         cardholder: "Luka Amalraj",
         expireMonth: "2022/21",
         CCV: "987",
-        vendor: "Ninja Bank",
+        vendor: "ninja",
     },
 ];
 function App() {
@@ -34,7 +34,15 @@ function App() {
     };
     show === false
         ? (view = <Home cards={array} toggle={toggleHandler} />)
-        : (view = <AddCard cards={array} toggle={toggleHandler} />);
+        : (view = (
+              <AddCard
+                  newCard={(card) => {
+                      array.push(card);
+                  }}
+                  cards={array}
+                  toggle={toggleHandler}
+              />
+          ));
 
     return <div className="App">{view}</div>;
 }

@@ -1,10 +1,39 @@
 .AddCard {
     background-color: whitesmoke;
-
     width: 420px;
-    height: 896px;
+    height: 950px;
     display: flex;
     flex-direction: column;
     padding: 1rem;
     border: 1px solid black;
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            input,
+            select {
+                border: 1px solid black;
+                height: 2.5rem;
+                border-radius: 8px;
+            }
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            div {
+                width: 48%;
+            }
+        }
+    }
 }

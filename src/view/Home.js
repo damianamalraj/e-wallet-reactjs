@@ -9,8 +9,14 @@ const Home = (props) => {
     return (
         <div className="Home">
             <h1>E-Wallet</h1>
-            <p>Activ Card</p>
-            {card}
+            <p className="active">Active Card</p>
+            <Card
+                card={props.cards[0]}
+                key={props.cards[0].cardNumber}
+                className="active-card"
+            />
+
+            <div className="card-list">{card}</div>
             <button onClick={props.toggle}>add a new card</button>
         </div>
     );

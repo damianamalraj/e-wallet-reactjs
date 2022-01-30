@@ -1,8 +1,38 @@
 .Card {
     background-color: #d0d0d0;
     width: 100%;
+    border-radius: 8px;
     height: 250px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
         rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
         rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .first-section {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem;
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.bitcoin {
+    background-color: #ffae34;
+}
+.blockchain {
+    background-color: #8b58f9;
+}
+.evil {
+    background-color: #f33355;
+}
+.ninja {
+    background-color: #222222;
+    color: white;
 }
