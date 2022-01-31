@@ -12,19 +12,22 @@
     }
     .card-list {
         position: relative;
-        height: 450px;
+        height: 550px;
         margin-top: 0.5rem;
+        div {
+            position: relative;
+        }
 
-        .Card:nth-of-type(2) {
+        article:nth-of-type(2) {
             transform: translateY(-80%);
         }
-        .Card:nth-of-type(3) {
+        article:nth-of-type(3) {
             transform: translateY(-160%);
         }
-        .Card:nth-of-type(4) {
+        article:nth-of-type(4) {
             transform: translateY(-240%);
         }
-        .Card:nth-of-type(5) {
+        article:nth-of-type(5) {
             transform: translateY(-320%);
         }
     }
