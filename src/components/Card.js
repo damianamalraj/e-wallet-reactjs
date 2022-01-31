@@ -37,14 +37,14 @@ const Card = (props) => {
                     " " +
                     props.card.cardNumber.slice(12, 16)}
             </h2>
-            <div>
+            <div className="third-section">
                 <div>
-                    <p>cardholder name</p>
-                    {props.card.cardholder}
+                    <span>cardholder name</span>
+                    <p>{props.card.cardholder}</p>
                 </div>
                 <div>
-                    <p>valid until</p>
-                    {props.card.expireMonth}
+                    <span>valid until</span>
+                    <p>{props.card.expireMonth}</p>
                 </div>
             </div>
         </div>

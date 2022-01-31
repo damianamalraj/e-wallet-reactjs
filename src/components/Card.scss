@@ -21,6 +21,16 @@
             flex-direction: column;
         }
     }
+
+    .third-section {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem;
+        p {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+    }
 }
 
 .bitcoin {
