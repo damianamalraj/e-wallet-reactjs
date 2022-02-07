@@ -26,6 +26,7 @@ let array = [
         vendor: "ninja",
     },
 ];
+
 function App() {
     const [show, setShow] = useState(false);
     let view = null;
@@ -44,7 +45,7 @@ function App() {
               />
           ));
 
-    return <div className="App">{view}</div>;
+    return <div className="App"> {view} </div>;
 }
 
 export default App;
